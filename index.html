@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<!-- membuat responsive web-page pakai bootstrap-->
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="./index.html">
+            <!-- taruh logo -->
+            <img src="./image/logo.jpg" alt="logo" width="100" height="50" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- buat navbar -->
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="./masaKecil.html">Masa Kecil</a>
+                </li>
+                <li class="nav-item r">
+                    <a class="nav-link" href="./tempatTinggal.html">Tempat tinggal</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="./pendidikan.html">Pendidikan</a>
+                </li>
+                <!-- dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sosial Media
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://facebook.com" target="_blank">
+                            <img src="./image/fblogo.png" alt="fb logo" class="logo"> Facebook</a>
+                        <a class="dropdown-item" href="https://linked.in" target="_blank"><img src="./image/lilogo.png"
+                                alt="lilogo" class="logo"> Linked in</a>
+                        <a class="dropdown-item" href="https://twitter.com" target="_blank"><img
+                                src="./image/twlogo.png" alt="twlogo" class="logo"> Twitter</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://instagram.com" target="_blank">
+                            <img src="./image/iglogo.png" alt="iglogo" class="logo"> Instagram</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- search bar-->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- content jambaktron -->
+    <div class="jambaktron text-center">
+        <h1>Selamat Datang di Duniaku</h1>
+        <p>Berikut ini adalah beberapa fakta tentang diriku</p>
+    </div>
+
+    <!--  buat kontainer card -->
+    <div class="container">
+        <div class="card-deck">
+            <div class="card kartu">
+                <img src=" ./image/child.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Masa Kecil</h5>
+                    <p class="card-text">Masa-masa kecil hingga remaja</p>
+                    <br>
+                    <a href="./masaKecil.html" class="btn btn-primary">Cekidot Gan</a>
+                </div>
+            </div>
+            <div class="card kartu">
+                <img src=" ./image/houses.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tempat Tinggal</h5>
+                    <p class="card-text">Beberapa Hal Menarik Tentang Daerah Tempat Tinggalku</p>
+                    <a href="./tempatTinggal.html" class="btn btn-primary">Cekidot Gan</a>
+                </div>
+            </div>
+            <div class="card kartu">
+                <img src="./image/ijazah.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pendidikan</h5>
+                    <p class="card-text">Riwayat Pendidikan Hingga 2020</p>
+                    <br>
+                    <a href="./pendidikan.html" class="btn btn-primary">Cekidon Gan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- carousel -->
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active sizeCarousel">
+                    <img src="./image/child.jpg" class="d-block w-100" alt="..." height="500px">
+                    <div class="carousel-caption d-md-block">
+                        <h4>Masa Kecil</h4>
+                        <p>Sedikit cerita mengenai masa kecil saya</p>
+                    </div>
+                </div>
+                <div class="carousel-item sizeCarousel">
+                    <img src="./image/houses.jpg" class="d-block w-100" alt="..." height="500px">
+                    <div class="carousel-caption d-md-block">
+                        <h4>Tempat Tinggal</h4>
+                        <p>Tempat tinggal saya saat ini</p>
+                    </div>
+                </div>
+                <div class="carousel-item sizeCarousel">
+                    <img src="./image/grupfoto.jpg" class="d-block w-100" alt="..." height="500px">
+                    <div class="carousel-caption d-md-block">
+                        <h4>Pendidikan</h4>
+                        <p>Sejarah pendidikan</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- bikin gambar acak -->
+    <div class="container">
+        <h2>Gambar Acak</h2>
+        <div class="">
+            <img src="https://picsum.photos/200" alt="Gambar Acak Responsive" class="img-responive">
+            <img src="https://picsum.photos/190" alt="Gambar Acak Rounded" class="rounded">
+            <img src="https://picsum.photos/180" alt="Gambar Acak Frame Lingkaran" class="rounded-circle">
+            <img src="https://picsum.photos/170" alt="Gambar Acak Thumbnail" class="img-thumbnail">
+        </div>
+    </div>
+    <!-- pesan peringatan berdasarkan warna -->
+    <div class="container p-4">
+        <h2>Alerts</h2>
+        <div class="alert alert-success">
+            <strong>Success!</strong> Alert box ini dapat digunakan untuk mengindikasikan aksi sukses atau
+            positif.
+        </div>
+        <div class="alert alert-info">
+            <strong>Info!</strong> Alert box ini dapat mengindikasikan informasi netral.
+        </div>
+        <div class="alert alert-warning">
+            <strong>Warning!</strong> Alert box ini dapat digunakan untuk mengindikasikan pesan warning dan
+            mungkin
+            butuh perbaikan
+        </div>
+        <div class="alert alert-danger">
+            <strong>Danger!</strong> Alert box ini dapat mengindikasikan pesan penting dan kemungkinan efek
+            buruk.
+        </div>
+    </div>
+
+    <!-- Tombol warna warni -->
+    <div class="container p-4">
+        <h2>Button Styles</h2>
+        <button type="button" class="btn"> Basic</button>
+        <button type="button" class="btn btn-default"> Default</button>
+        <button type="button" class="btn btn-primary"> Primary</button>
+        <button type="button" class="btn btn-success"> success</button>
+        <button type="button" class="btn btn-info"> Info</button>
+        <button type="button" class="btn btn-warning"> Warning</button>
+        <button type="button" class="btn btn-danger"> Danger</button>
+        <button type="button" class="btn btn-link"> Link</button>
+    </div>
+
+    <!-- bikin input form -->
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Nama Partisipan</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama Kamu">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Kota Asal</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Jakarta</option>
+                    <option>Madiun</option>
+                    <option>Surabaya</option>
+                    <option>Jogja</option>
+                    <option>Makasar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Alamat Lengkap</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- hr -->
+    <hr>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
