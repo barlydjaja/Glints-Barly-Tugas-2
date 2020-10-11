@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<!-- membuat responsive web-page pakai bootstrap-->
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="./index.html">
+            <!-- taruh logo -->
+            <img src="./image/logo.jpg" alt="logo" width="100" height="50" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- buat navbar -->
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="./masaKecil.html">Masa Kecil</a>
+                </li>
+                <li class="nav-item r">
+                    <a class="nav-link" href="./tempatTinggal.html">Tempat tinggal</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="./pendidikan.html">Pendidikan</a>
+                </li>
+                <!-- dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sosial Media
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://facebook.com" target="_blank">
+                            <img src="./image/fblogo.png" alt="fb logo" class="logo"> Facebook</a>
+                        <a class="dropdown-item" href="https://linked.in" target="_blank"><img src="./image/lilogo.png"
+                                alt="lilogo" class="logo"> Linked in</a>
+                        <a class="dropdown-item" href="https://twitter.com" target="_blank"><img
+                                src="./image/twlogo.png" alt="twlogo" class="logo"> Twitter</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://instagram.com" target="_blank">
+                            <img src="./image/iglogo.png" alt="iglogo" class="logo"> Instagram</a>
+                    </div>
+                </li>
+                <!-- buat tugas -->
+                <li class="nav-item">
+                    <a class="nav-link btn btn-success" href="./tugas3.html">Tugas-3</a>
+                </li>
+            </ul>
+            <!-- search bar-->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container ">
+        <h1 style="text-align: center;">Tugas-3 GLINTS</h1>
+        <h3 style="text-align: center;">Barly Djaja</h3>
+        <div class="text-center">
+            <a href="./image/tugasnya.png" class="btn btn-dark" target="_blank">Download
+                Instruksi Tugas</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- soal pertama -->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-4">
+                <h2>SOAL 1</h2>
+                <h3>Besok Hari apa?</h3>
+                <h5>pseudo code:</h5>
+                <p>
+                    1. masukan list dari hari (senin-minggu) <br>
+                    2. buat loop for i=0, sampai i=hari.length, i++ <br>
+                    2.1 jika hari senin-sabtu, print hari berikutnya <br>
+                    2.2 jika hari minggu, print hari senin <br>
+                </p>
+                <b>pilih hari:</b>
+                <select id="hari" class="custom-select">
+                    <option value="senin">senin</option>
+                    <option value="selasa">selasa</option>
+                    <option value="rabu">rabu</option>
+                    <option value="kamis">kamis</option>
+                    <option value="jumat">jumat</option>
+                    <option value="sabtu">sabtu</option>
+                    <option value="minggu">minggu</option>
+                    <option value="januari">januari</option>
+                </select>
+                <input type="button" value="besok adalah hari " onclick="fixSoal1()" class="btn btn-secondary">
+                <input type="text" id="besokHari" size="20" placeholder="apa ya.." class="custom-select">
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <!-- soal kedua -->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-4">
+                <h2>SOAL 2</h2>
+                <h3>Apa Nilai Kamu?</h3>
+                <h5>pseudo code:</h5>
+                <p>
+                    1.tentukan nilai yang diberikan <br>
+                    2.jika bukan angka, tuliskan "bukan angka" <br>
+                    3.jika angka diluar 0-100, tuliskan "angka harus 0-100" <br>
+                    4.jika angka 0-100, masukan ke if lagi <br>
+                    4.1 bagi range angka sesuai yang ditetapkan <br>
+                    4.2 print konversi angka sesuai yang ditetapkan <br>
+                </p>
+                <b>masukan nilai:</b>
+                <br>
+                <input type="text" name="nilai" id="nilai" class="form-control">
+                <input type="button" value="konversi" onclick="fixSoal2()" class="btn btn-secondary">
+                <p>nilai kamu adalah</p>
+                <p id="konversiHuruf">*mainkan musik</p>
+            </div>
+            <div class="col"></div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <!-- soal ketiga -->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-4">
+                <h2>SOAL 3</h2>
+                <h3>Perulangan Genap</h3>
+                <h5>pseudo code:</h5>
+                <p>
+                    1. tentukan dan batasi nilai yang diberikan <br>
+                    2. buat batasan angka (0-50) agar sistem tidak overload jika angka terlalu besar <br>
+                    3. jika angka melewati batas, tuliskan batas angka yang harus dimasukan <br>
+                    4. jika angka dalam batas, masukan ke loop for <br>
+                    4.1 for index=0, index kurdar angka+1, index+=2, <br>
+                    4.2 print tiap index
+                </p>
+                <b>masukan nilai antar 0-50</b>
+                <br>
+                <input type="text" name="angkaGenap" id="angkaGenap" class="form-control">
+                <input type="button" value="Tunjukan angka genap" onclick="fixSoal3()" class="btn btn-secondary">
+                <p>berikut ini angka genapnya</p>
+                <p id="listAngkaGenap">angkanya muncul disini...</p>
+            </div>
+            <div class="col"></div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <!-- soal keempat -->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-4">
+                <h2>SOAL 4</h2>
+                <h3>Perualangan Ganjil</h3>
+                <h5>pseudo code:</h5>
+                <p>
+                    1. tentukan dan batasi nilai yang diberikan <br>
+                    2. buat batasan angka (1-50) agar sistem tidak overload jika angka terlalu besar <br>
+                    3. jika angka melewati batas, tuliskan batas angka yang harus dimasukan <br>
+                    4. jika angka dalam batas, masukan ke loop for <br>
+                    4.1 for index=1, index kurdar angka+1, index+=2 <br>
+                    4.2 print tiap index <br>
+                    5. jika 0, tuliskan harus mulai dari 1 <br>
+                </p>
+                <b>masukan nilai antara 1-50</b>
+                <br>
+                <input type="text" name="angkaGanjil" id="angkaGanjil" class="form-control">
+                <input type="button" value="Tunjukan angka ganjil" onclick="fixSoal4()" class="btn btn-secondary">
+                <p>berikut ini angka ganjilnya</p>
+                <p id="listAngkaGanjil">angkanya muncul disini...</p>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="./js/soal.js"></script>
+
+</body>
